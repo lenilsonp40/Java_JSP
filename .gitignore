@@ -1,0 +1,95 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun.lockb
+
+# Editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+npm-debug.log
+yarn-debug.log
+pnpm-debug.log
+lerna-debug.log
+.log/
+
+# Build
+/build
+/dist
+
+# Cache
+.cache/
+.temp/
+*.tmp
+.cache-loader
+
+# Test coverage
+/coverage
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependency directories
+node_modules/
+
+# Service workers (caso use PWA)
+public/sw.js
+public/sw.js.map
+
+# Optional: caso você use Docker para o dev
+docker-compose.override.yml
+.dockerignore
+
+# IDE e sistema
+Thumbs.db
+.DS_Store
+
+# Storybook (se usar)
+storybook-static/
+
+# ESLint cache
+.eslintcache
+
+# Jest cache e snapshots
+/jest-cache/
+/jest-stare/
+/__snapshots__/
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage reports
+/coverage/
+
+# Cache do Cypress (caso use testes E2E)
+.cypress_cache/
+
+# Config do Mac
+.DS_Store
+
+# Temp do npm
+.npm/
+
+# Optional: se usar GitHub Actions
+/.github/workflows/
+
+# Local dev tools
+.local/
+
+# Pnpm store (caso use pnpm)
+.pnpm-store/
