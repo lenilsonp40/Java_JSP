@@ -1,1 +1,1 @@
-Colocando em práticas projetos em react para meu trabalho!
+Repositório com projetos e Estudos em JSP!
