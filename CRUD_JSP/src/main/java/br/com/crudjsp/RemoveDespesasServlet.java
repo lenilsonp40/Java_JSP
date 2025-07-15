@@ -26,6 +26,8 @@ public class RemoveDespesasServlet  extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("listaDespesas");
         dispatcher.forward(request, response);
 
+        System.out.println("Despesa com id " + id + " removida com sucesso!");
+
 
 
     }
