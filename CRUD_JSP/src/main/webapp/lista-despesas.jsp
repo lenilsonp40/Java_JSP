@@ -40,7 +40,7 @@
                 <td>${despesa.valor}</td>
                 <td>${despesa.categoria}</td>
                 <td>
-                    <a href="removeDespesa?id=${despesa.id}">
+                    <a href="controladora?acao=RemoveDespesa&?id=${despesa.id}">
                         Remover
                     </a>
                 </td>

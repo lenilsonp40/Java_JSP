@@ -1,4 +1,4 @@
-package br.com.crudjsp;
+package br.com.crudjsp.acoes;
 
 import br.com.codandosimples.dao.DespesaDAO;
 import br.com.codandosimples.infra.ConnectionFactory;
@@ -7,8 +7,6 @@ import br.com.codandosimples.model.Despesa;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -16,11 +14,10 @@ import java.sql.Connection;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-@WebServlet("/adicionaDespesa")
-public class AdicionaDespesaServlet  extends HttpServlet {
+public class AdicionaDespesa {
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         String descricaoStr = request.getParameter("descricao");
         String dataStr = request.getParameter("data");
         String valorStr = request.getParameter("valor");
@@ -37,7 +34,5 @@ public class AdicionaDespesaServlet  extends HttpServlet {
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/despesa-adicionada.jsp");
         dispatcher.forward(request, response);
-
     }
-
 }

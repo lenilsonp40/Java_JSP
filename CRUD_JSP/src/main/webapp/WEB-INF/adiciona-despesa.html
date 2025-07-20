@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de despesa</title>
+</head>
+<body>
+    <h1>Cadastro de despesa</h1>
+    <form action="controladora" method="post">
+        Descrição: <input type="text" name="descricao" required><br>
+        Data: <input type="text" name="data" required><br>
+        Valor: <input type="text" name="valor" required><br>
+        Categoria: <input type="text" name="categoria" required><br>
+
+
+        <input type="hidden" name="acao" value="AdicionaDespesa">
+        <button type="submit" value="Enviar">Adicionar Despesa</button>
+    </form>
+
+</body>
+</html>
