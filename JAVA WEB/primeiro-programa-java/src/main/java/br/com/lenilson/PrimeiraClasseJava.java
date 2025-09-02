@@ -1,18 +1,16 @@
 package br.com.lenilson;
 
-import javax.swing.*;
+import br.com.lenilson.classes.Aluno;
+
+
 
 public class PrimeiraClasseJava {
     public static void main(String[] args) {
 
+       Aluno aluno2 = new Aluno();
 
-        String nome = JOptionPane.showInputDialog("Informe seu nome: ");
-        System.out.println(nome);
+       
 
-
-        double carrosNumero =  Double.parseDouble(nome);
-        }
-
-
+    }
 
 }
